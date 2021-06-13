@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Contact Page</title>
+
+    <script>
+        function validation(){
+  // store the value that user enter in variables
+  var user = document.getElementById('user').value;
+  var user2 =  document.getElementById('user2').value;
+  var pass = document.getElementById('pass').value;
+  
+  var email = document.getElementById('email').value;
+  var mobile = document.getElementById('mobile').value;
+  
+  var myform = document.getElementById('myform');
+   // to check if that field empty or not
+  
+ 
+ //  to accert a name of 3 letters at least
+  if(user.length<3){
+      alert("first Name must be more than 2 letters");
+      return false;
+  }
+  else if(user2.length<3){
+    alert("last Name must be more than 2 letters");
+    return false;
+}
+ else if(mobile.length!=11){
+      alert("*Please Enter avalid number");
+      return false;
+  }
+  
+  
+  else if(pass.search(/[ ]/)!=-1){
+     alert("*must not include a space*");
+  return false;
+ }
+  // limit the lenght of the  pass
+   else if(pass.length != 8 ){
+    alert("*please write a passward of 8 no long no less*");
+      return false;
+  }
+    // must enclud numbers
+ else if(pass.search(/[0-9]/)==-1){
+      
+      alert("must incluce at least a number");
+      return false;
+  }
+  //not to accept without upper characters
+  else if(pass.search(/[A-Z]/)==-1){
+alert("*must include at leasrt 1 upper character*");
+      return false;
+  }
+  // not to accept without lower characters
+  else if(pass.search(/[a-z]/)==-1){
+      alert("*must include at least 1 lowwer character*");
+  return false;
+ }
+  // not accept without special characters
+   else if(pass.search(/[!\@\#\$\%\^\&\*\(\)\_\-\=\+\<\>\,\?]/)==-1){
+     
+         alert("*must include 1 special character*");
+      return false;
+     }
+     else {
+         alert("Thanks for choosing us");
+     }
+  
+  
+ 
+    if(email.indexOf("@") == -1 || email.length < 6){
+    alert("*Please Enter valid Email*");
+     return false;
+}
+        }
+    </script>
+
+
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="wedding.html">Wedding Cakes</a></li>
+        <li class="dropdown">
+            <a href="sweet.html">Sweets</a>
+            <div class="dropdown-content">
+                <a href="sweet.html#link1">cupcakes</a>
+                <a href="sweet.html#link2">Macron & Biscuits</a>
+              </div>
+        </li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+    </ul>
+
+    <div class="photo">
+        <div class="text">
+            <h1>Keep in touch with us</h1>
+            <p>Life is what you bake of it</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row" style="text-align: left;font-size: 60px;font-weight: 700;margin:30px;">Contact us</div>
+        <form action="post" action="index.html" onsubmit="return validation()" autocomplete="on" id="myform">
+
+            <div class="row">
+                <div >
+                    <label for="fname" >First Name</label>
+                    <input type="text" id="user" name="fname" required>
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="user2" name="lname" required>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div>
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password </label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text"  name="address" required>
+                </div>
+                <div>
+                    <label for="phone number">Phone Number</label>
+                    <input type="tel" id="mobile" name="phonenumber" required>
+                </div> 
+            </div>
+            
+            <div class="row1 row">
+                <div>
+                    <label for="message">The Order</label>
+                    <textarea cols="20" rows="4" required></textarea>
+                </div>
+            </div>
+
+            <div class="row gs" >
+                <div>
+                    <label>Gender</label>
+                </div>
+                <div>
+                    <select id="gender" required>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div><input type="submit" name="submit" id="submit" onsubmit="alert('thanks')"></div>
+                
+            </div>
+            
+        </form>
+    </div>
+
+    <footer class="footer-area">
+        <div><h4>Follow Us</h4></div>
+        <div class="icons">
+         <a href="#" ><i class="fa fa-facebook"></i></a>
+         <a href="#"><i  class="fa fa-instagram"></i></a>
+         <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+body {
+    background-color:rgba(241,241,241);
+}
+.nav {
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin-left: -30px;
+    justify-content: center;
+}
+.nav li {
+    background-color:rgba(241,241,241);
+    width: 20%;
+}
+.nav li a {
+  display: block;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(32, 31, 36);
+}
+.nav li a:hover {
+    color:  rgba(7, 35, 72);
+    text-shadow: 2px 2px 4px  rgb(144, 154, 172);
+}
+.nav li a:active {
+    color: rgba(136, 151, 177);
+}
+.container .row , .container .row1{
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .row div , .container .row1 div {
+    margin: 20px;
+    font-size: 25px;
+    
+}
+.container .row div label ,.container .row1 div label{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.container .row div input ,.container .row div textarea{
+    height: 47px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.container .row1 div textarea{
+    height: 70px;
+    width: 650px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+    
+.photo {
+    background-image: url(berrymacron.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    margin-top: -100px;
+    margin-left: -8px;
+    margin-right: -7px;
+    z-index: -1;
+}
+.photo .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+    
+}
+.photo .text h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgba(85, 32, 37);
+}
+.photo .text p {
+    font-size: 19px;
+    line-height: 1.8;
+    color: rgba(85, 32, 37);
+}
+.footer-area {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(171, 120, 70);
+    flex-direction: column;
+    padding: 40px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -20px;
+    margin-top: 40px;
+}
+.footer-area div h4 {
+    margin: 6px;
+    text-align: center;
+    font-size: 25px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+.icons a {
+    margin: 10px;
+    color: wheat;
+}
+
+li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .row div select option {
+      font-size: 20px;
+  }
+  .gs select {
+      width: 90px;
+  }
+
+  @media only screen and (max-width:425px){
+    
+    .container .row1 div textarea{
+        height: 70px;
+        width: 350px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    .nav {
+        list-style-type: none;
+        margin: 0px;
+        display: flex;
+        
+        
+        margin-left: -30px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav li {
+        background-color:RGBA( 0, 0, 0, 0 );
+        width: 100%;
+    }
+    .nav li a {
+      display: block;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-size: 21px;
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif;
+      color: RGBA( 128, 0, 0, 1 );
+    }
+    .nav li a:hover {
+        color:  rgba(7, 35, 72);
+        text-shadow: 2px 2px 4px  rgb(144, 154, 172);
+        background-color:rgba(241,241,241);
+    }
+    .nav li a:active {
+        color: rgba(136, 151, 177);
+    }
+    .photo {
+        margin-top: -400px;
+    }
+    .photo .text {
+        margin-top: 200px;
+    }
+    .photo .text h1{
+        margin: 0;
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(241, 205, 205);
+        
+    }
+    .photo .text p {
+        font-size: 10px;
+        line-height: 1.8;
+        color: rgb(241, 205, 205);
+    }
+  }
+  @media only screen and(max-width: 768px){
+    .nav {
+        list-style-type: none;
+        margin: 0px;
+        display: flex;
+        
+        margin-left: -30px;
+        justify-content: center;
+    }
+    .nav li {
+        background-color:rgba(241,241,241);
+        width: 20%;
+    }
+    .nav li a {
+      display: block;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-size: 21px;
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif;
+      color: rgba(32, 31, 36);
+    }
+    .nav li a:hover {
+        color:  rgba(7, 35, 72);
+        text-shadow: 2px 2px 4px  rgb(144, 154, 172);
+    }
+    .nav li a:active {
+        color: rgba(136, 151, 177);
+    }
+      
+  }

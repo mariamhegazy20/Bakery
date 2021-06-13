@@ -1,0 +1,238 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgba(241,241,241);
+    
+}
+#home {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgba(241,241,241);
+    margin: 0%;
+    height: 650px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: auto;
+}
+.nav li {
+    
+    background-color:rgba(241,241,241);
+    width: 16.666%;
+}
+.nav li a {
+  display: block;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(32, 31, 36);
+}
+.nav li a:hover {
+    color:  rgba(7, 35, 72);
+    text-shadow: 2px 2px 4px  rgb(144, 154, 172);
+}
+.nav li a:active {
+    color: rgba(136, 151, 177);
+}
+.logo {
+    margin-left: 24%;
+    margin-top: 8%;
+}
+#aboutus h1 {
+    text-align: center;
+    font-size: 60px;
+}
+.one {
+    height:auto;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+}
+.one .p1 {
+    font-size: 28px;
+    margin: 60px;
+    color: rgb(113, 136, 136);
+}
+.one .chef img{
+    width: 390px;
+    height: 530px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 130px;
+    box-shadow: 5px 5px 5px 5px rgba(223, 183, 151, 0.5);
+}
+.two {
+    height:auto;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.two .p2 {
+    font-size: 28px;
+    margin: 60px;
+    color: rgb(113, 136, 136);
+}
+.two .shop img{
+    width: 380px;
+    height: 530px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 130px;
+    box-shadow: 5px 5px 5px 5px rgba(223, 183, 151, 0.5);
+}
+.footer-area {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(171, 120, 70);
+    flex-direction: column;
+    padding: 40px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -20px;
+    margin-top: 40px;
+}
+.footer-area div h4 {
+    margin: 6px;
+    text-align: center;
+    font-size: 25px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+.icons a {
+    margin: 10px;
+    color: wheat;
+}
+
+
+li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+@media only screen and (max-width: 768px)  {
+    .logo {
+        margin-left: 25px;
+        width: 600px;
+    }
+    .one , .two {
+        flex-direction: column;
+    }
+    .one .chef {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .logo {
+        width: 350px;
+        margin-left: 50px;
+    }
+    #home {
+        height: 400px;
+    }
+    #aboutus h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-left: 70px;
+        margin-top: 300px
+    }
+    
+    
+    .footer-area {
+        width: 100%;
+        
+    }
+    .nav {
+        list-style-type: none;
+        margin: 0px;
+        display: flex;
+        
+        
+        margin-left: -30px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav li {
+        background-color:RGBA( 0, 0, 0, 0 );
+        width: 100%;
+    }
+    .nav li a {
+      display: block;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-size: 21px;
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif;
+      color: rgba(32, 31, 36);;
+    }
+    .nav li a:hover {
+        color:  rgba(7, 35, 72);
+        text-shadow: 2px 2px 4px  rgb(144, 154, 172);
+        background-color:rgba(241,241,241);
+    }
+    .nav li a:active {
+        color: rgba(136, 151, 177);
+    }
+    .one .p1 {
+        font-size: 24px;
+    }
+    .one .chef {
+        margin-left: 0px;
+    }
+    .one .chef img{
+        width: 290px;
+        height: 430px;
+        border-radius: 10px;
+        margin: 20px;
+        margin-top: 130px;
+        box-shadow: 5px 5px 5px 5px rgba(223, 183, 151, 0.5);
+    }
+    .two .p1 {
+        font-size: 24px;
+    }
+    .two .shop {
+        margin-left: 0px;
+    }
+    .two .shop img{
+        width: 290px;
+        height: 430px;
+        border-radius: 10px;
+        margin: 20px;
+        margin-top: 130px;
+        box-shadow: 5px 5px 5px 5px rgba(223, 183, 151, 0.5);
+    }
+}

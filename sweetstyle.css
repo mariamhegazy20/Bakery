@@ -1,0 +1,219 @@
+body {
+    background-color:rgba(241,241,241);
+}
+.nav {
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin-left: -30px;
+}
+.nav li {
+    background-color:rgba(241,241,241);
+    width: 20%;
+}
+.nav li a {
+  display: block;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(32, 31, 36);
+}
+.nav li a:hover {
+    color:  rgba(7, 35, 72);
+    text-shadow: 2px 2px 4px  rgb(144, 154, 172);
+}
+.nav li a:active {
+    color: rgba(136, 151, 177);
+}
+
+
+
+.footer-area {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(171, 120, 70);
+    flex-direction: column;
+    padding: 40px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -20px;
+    margin-top: 40px;
+}
+.footer-area div h4 {
+    margin: 6px;
+    text-align: center;
+    font-size: 25px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+.icons a {
+    margin: 10px;
+    color: wheat;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.cupcake .row .card a {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(45, 94, 100);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.cupcake .row .card a:hover {
+    color: rgba(231, 57, 38);
+}
+
+
+.cupcake .row {
+    display: flex;
+    margin: 20px 40px;
+    
+}
+
+.cupcake .row .card{
+    width: calc((100%-200)/4);
+    margin: 20px;
+    border-radius: 11px;
+}
+
+.cupcake .row .card img {
+    width: 100%;
+    height: 420px
+}
+.cupcake .row .card p {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(44, 62, 88);
+}
+
+
+
+.mb .row .card a {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(45, 94, 100);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.mb .row .card a:hover {
+    color: rgba(231, 57, 38);
+}
+
+
+.mb .row {
+    display: flex;
+    margin: 20px 40px;
+}
+
+.mb .row .card{
+    width: calc((100%-200)/4);
+    margin: 20px;
+    border-radius: 11px;
+}
+
+.mb .row .card img {
+    width: 100%;
+    height: 420px
+}
+.mb .row .card p {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(44, 62, 88);
+}
+
+
+@media only screen and (max-width: 768px){
+    .cupcake .row .card , .mb .row .card {
+        width: 284px;
+    }
+    .cupcake .row , .mb .row{
+        display: flex;
+        margin: 20px 40px;
+        flex-wrap: wrap;
+    }
+    .footer-area {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 425px){
+    .footer-area {
+        width: 90%;
+        margin-right: 0px;
+    }
+    .nav {
+        list-style-type: none;
+        margin: 0px;
+        display: flex;
+        
+        
+        margin-left: -30px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav li {
+        background-color:RGBA( 0, 0, 0, 0 );
+        width: 100%;
+    }
+    .nav li a {
+      display: block;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-size: 21px;
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif;
+      color: RGBA( 128, 0, 0, 1 );
+    }
+    .nav li a:hover {
+        color:  rgba(7, 35, 72);
+        text-shadow: 2px 2px 4px  rgb(144, 154, 172);
+        background-color:rgba(241,241,241);
+    }
+    .nav li a:active {
+        color: rgba(136, 151, 177);
+    }
+  }
