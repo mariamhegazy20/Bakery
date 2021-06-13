@@ -5,8 +5,6 @@ body {
     list-style-type: none;
     margin: 0px;
     display: flex;
-    position: sticky;
-    top: 0;
     margin-left: -30px;
     flex-wrap: wrap;
     width: auto;
